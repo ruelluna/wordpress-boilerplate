@@ -1,3 +1,12 @@
 [submodule "wordpress"]
 	path = wordpress
 	url = git://github.com/WordPress/WordPress.git
+[submodule "wp-content/themes/_s"]
+	path = wp-content/themes/_s
+	url = https://github.com/Automattic/_s.git
+[submodule "wp-content/plugins/wp-sync-db"]
+	path = wp-content/plugins/wp-sync-db
+	url = https://github.com/wp-sync-db/wp-sync-db.git
+[submodule "wp-content/plugins/wp-sync-db-media-files"]
+	path = wp-content/plugins/wp-sync-db-media-files
+	url = https://github.com/wp-sync-db/wp-sync-db-media-files.git
