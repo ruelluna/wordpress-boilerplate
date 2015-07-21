@@ -84,6 +84,10 @@ if (!defined('WP_HOME')) {
     define('WP_HOME', $protocol . rtrim($hostname, '/'));
 }
 
+define('WP_HOME',    $protocol . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT']);
+define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
+define('WP_CONTENT_URL', $protocol . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . '/wp-content');
+
 // Clean up
 unset($hostname, $protocol);
 
